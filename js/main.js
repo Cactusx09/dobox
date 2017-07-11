@@ -83,15 +83,21 @@ $(document).ready(function(){
 			rules: {
 				name: {required: true},
 				phone: {required: true},
-				mail: {required: true}
+				mail: {required: true},
+				tz: {required: false},
+				form: {required: false}
 			},
 			messages: {},
 			errorPlacement: function (error, element) {},
 			submitHandler: function (form) {
+				var data = new FormData(it[0]);
 				$.ajax({
 					type: "POST",
 					url: "../mail.php",
-					data: it.serialize()
+					data: data,
+					cache: false,
+					processData: false, // Не обрабатываем файлы (Don't process the files)
+					contentType: false, // Так jQuery скажет серверу что это строковой запрос
 				}).done(function () {
 					$('.popup').removeClass('visible');
 					$('.popup._thnx, .overlay').addClass('visible');
@@ -180,7 +186,10 @@ $(document).ready(function(){
 
 //gmap init
 function mapInitialize(el_id) {
-	var moscow = new google.maps.LatLng(55.759119, 37.624978);
+	var points = $('#s_contacts__map').data('points').split(',');
+	var pointX = Number(points[0]),
+		pointY = Number(points[1]);
+	var moscow = new google.maps.LatLng(pointX, pointY);
 	var mapOptions = {
 		zoom: 17,
 		center: moscow,

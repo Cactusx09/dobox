@@ -76,48 +76,9 @@ $(document).ready(function(){
 	//mask
 	$('input[name="phone"]').mask('+7 (999) 999-99-99');
 
+
 	//validate
-	$("form").each(function () {
-		var it = $(this);
-		it.validate({
-			rules: {
-				name: {required: true},
-				phone: {required: true},
-				mail: {required: true},
-				tz: {required: false},
-				form: {required: false}
-			},
-			messages: {},
-			errorPlacement: function (error, element) {},
-			submitHandler: function (form) {
-				var data = new FormData(it[0]);
-				$.ajax({
-					type: "POST",
-					url: "../mail.php",
-					data: data,
-					cache: false,
-					processData: false, // Не обрабатываем файлы (Don't process the files)
-					contentType: false, // Так jQuery скажет серверу что это строковой запрос
-				}).done(function () {
-					$('.popup').removeClass('visible');
-					$('.popup._thnx, .overlay').addClass('visible');
-					setTimeout(function () {
-						if ($('.popup._thnx').hasClass('visible')) {
-							$('.popup._thnx, .overlay').removeClass('visible');
-						}
-					}, 2800);
-				});
-				return false;
-			},
-			success: function () {},
-			highlight: function (element, errorClass) {
-				$(element).addClass('_error');
-			},
-			unhighlight: function (element, errorClass, validClass) {
-				$(element).removeClass('_error');
-			}
-		});
-	});
+
 
 	//item slider
 	if($('*').is('.s_item__slider')){

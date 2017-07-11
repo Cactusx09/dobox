@@ -54,13 +54,15 @@
 						</nav>
         			</div>
         		</div>
-        		<form class="header__pop" action="/">
+				<form class="header__pop" action="/">
 					<div class="container">
 						<div class="header__pop_wrap">
 							<div class="header__pop_close">&times;</div>
+							<input type="hidden" name="form" placeholder="Заказать звонок">
 							<input type="text" class="input" name="name" placeholder="Ваше имя">
 							<input type="text" class="input" name="phone" placeholder="Номер телефона">
 							<button class="btn_small" type="submit"><span>заказать звонок</span></button>
+							<button class="g-recaptcha" id="captcha1"></button>
 						</div>
 					</div>
 				</form>
@@ -375,7 +377,7 @@
 			<h3 class="h1">отправить тз на расчет <div class="close_pop"><span>&times;</span></div></h3>
 			<hr>
 			<form action="/" class="popup__form">
-			<input type="hidden" name="form" value="отправить тз на расчет">
+				<input type="hidden" name="form" value="Отправить тз на расчет">
 				<input type="text" class="input" name="name" placeholder="Ваше имя">
 				<input type="text" class="input" name="phone" placeholder="Номер телефона">
 				<input type="email" class="input" name="mail" placeholder="E-mail адрес">
@@ -383,6 +385,7 @@
 				<textarea class="textarea" name="tz" placeholder="ТЕхническое задание"></textarea>
 				<div class="popup__form_txt">
 					<button type="submit" class="btn"><span>Запросить стоимость</span></button>
+					<button class="g-recaptcha" id="captcha2"></button>
 					<div>
 						<h4>Минимальный заказ: <b>от 1 штуки</b></h4>
 						<h4>наш телефон: <b><a href="tel:88005553535"> 8 800 555 35 35</a></b></h4>
@@ -401,7 +404,61 @@
         <script src="vendor/jquery.validate.min.js"></script>
         <script src="vendor/jquery.maskedinput.min.js"></script>
         <script src="vendor/lightslider/js/lightslider.min.js"></script>
-        <script src="js/main.js"></script>
+		<script src="js/main.js"></script>
+		<script>
+			var onloadCallback = function() {
+				$("form").each(function () {
+					var it = $(this),
+						btn = it.find('.g-recaptcha');
+					var gcap = grecaptcha.render($(btn).attr("id"), {
+						'sitekey' : '6Lf-qigUAAAAAH33QqZt2IiaDm4Jo2uJx2c1bZE0',
+						"size": "invisible",
+						'callback' : function(token){
+							var data = new FormData(it[0]);
+							$.ajax({
+								type: "POST",
+								url: "../mail.php",
+								data: data,
+								cache: false,
+								processData: false, // Не обрабатываем файлы (Don't process the files)
+								contentType: false, // Так jQuery скажет серверу что это строковой запрос
+							}).done(function () {
+								$('.popup').removeClass('visible');
+								$('.popup._thnx, .overlay').addClass('visible');
+								setTimeout(function () {
+									if ($('.popup._thnx').hasClass('visible')) {
+										$('.popup._thnx, .overlay').removeClass('visible');
+									}
+								}, 2800);
+							});
+						}
+					});
+					it.validate({
+						rules: {
+							name: {required: true},
+							phone: {required: true},
+							mail: {required: true},
+							tz: {required: false},
+							form: {required: false}
+						},
+						messages: {},
+						errorPlacement: function (error, element) {},
+						submitHandler: function (form) {
+							grecaptcha.execute(gcap);
+						},
+						success: function () {
+						},
+						highlight: function (element, errorClass) {
+							$(element).addClass('_error');
+						},
+						unhighlight: function (element, errorClass, validClass) {
+							$(element).removeClass('_error');
+						}
+					});
+				});
+			};
+		</script>
+		<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit'></script>
 		<script src="_trg.js"></script>
     </body>
 </html>

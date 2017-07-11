@@ -1799,6 +1799,14 @@ hr{
 				margin-bottom: -1px;
 			}
 		}
+		.text{
+			.btn_small{
+				display: inline-flex;
+				align-items: center;
+				cursor: pointer;
+				justify-content: center;
+			}
+		}
 	}
 }
 .s_404{

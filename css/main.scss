@@ -1842,12 +1842,18 @@ _inner
 				margin-bottom: -1px;
 			}
 		}
-		.text{
+		&__item{
 			.btn_small{
 				display: inline-flex;
 				align-items: center;
 				cursor: pointer;
 				justify-content: center;
+			}
+			p{
+				margin-bottom: 15px;
+				img{
+					margin-right: 15px;
+				}
 			}
 		}
 	}
@@ -2040,6 +2046,11 @@ body,html{
 		}
 		.h2{
 			margin-bottom: 0;
+		}
+	}
+	&._item{
+		.h1{
+			font-size: 2em;
 		}
 	}
 	&.visible{

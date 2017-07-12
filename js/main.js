@@ -62,6 +62,11 @@ $(document).ready(function(){
 		if ($(this).closest('.header')) {
 			$('.header__nav_cont').removeClass('active');
 		}
+		if($(this).closest('.s_item_txt__item')){
+			var text = $(this).prev('p').text();
+			$('.popup._item').find('h3').text(text);
+			$('.popup._item').find('input[name="form"]').val(text);
+		}
 		$('.overlay, .popup._'+name).addClass('visible');
 		var px = window.pageYOffset;
 		$('.popup').css('top',px+'px');

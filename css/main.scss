@@ -1,5 +1,4 @@
-/*
-BY OLEXANDR DUHOVNUY. - http://vk.com/thoroughgoing1
+/*BY OLEXANDR DUHOVNUY. - http://vk.com/thoroughgoing1
 ██████████████████████████████████████████████████████████████████████
 ██                                                         ▒██████████
 ██░░░▒░▒▒▒   ▒░░░░░░▒   ░░░░░░░░░░░░░▒     ▒▒▒▒▒▒▒▒▒░▒▒▒░▒░▓██████████
@@ -13,8 +12,8 @@ BY OLEXANDR DUHOVNUY. - http://vk.com/thoroughgoing1
 ██████████████████████████████████████████████████████████████████████
 */
 /* ==========================================================
-   _reset
-   ========================================================== */
+_reset
+========================================================== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -34,7 +33,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -59,28 +58,28 @@ table {
 	border-spacing: 0;
 }
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+	color: #222;
+	font-size: 1em;
+	line-height: 1.4;
 }
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 :focus{
 	outline: none;
 }
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 audio,
 canvas,
@@ -88,75 +87,75 @@ iframe,
 img,
 svg,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 input,textarea{
 	box-sizing: border-box;
 }
 .browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
 }
 a{
 	text-decoration: none;
 }
 
 /* ==========================================================
-   _fonts
-   ========================================================== */
+_fonts
+========================================================== */
 
 
 @font-face {
-  font-family: 'ProximaNova';
-  src: url('../webfonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('../webfonts/ProximaNova-Regular.otf')  format('opentype'),
-	     url('../webfonts/ProximaNova-Regular.woff') format('woff'), url('../webfonts/ProximaNova-Regular.ttf')  format('truetype'), url('../webfonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
-  font-weight: 400;
-  font-style: normal;
+	font-family: 'ProximaNova';
+	src: url('../webfonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),  url('../webfonts/ProximaNova-Regular.otf')  format('opentype'),
+		url('../webfonts/ProximaNova-Regular.woff') format('woff'), url('../webfonts/ProximaNova-Regular.ttf')  format('truetype'), url('../webfonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'ProximaNova';
-  src: url('../webfonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  url('../webfonts/ProximaNova-Semibold.otf')  format('opentype'),
-	     url('../webfonts/ProximaNova-Semibold.woff') format('woff'), url('../webfonts/ProximaNova-Semibold.ttf')  format('truetype'), url('../webfonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
-  font-weight: 600;
-  font-style: normal;
+	font-family: 'ProximaNova';
+	src: url('../webfonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),  url('../webfonts/ProximaNova-Semibold.otf')  format('opentype'),
+		url('../webfonts/ProximaNova-Semibold.woff') format('woff'), url('../webfonts/ProximaNova-Semibold.ttf')  format('truetype'), url('../webfonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
 }
 @font-face {
-  font-family: 'ProximaNova';
-  src: url('../webfonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  url('../webfonts/ProximaNova-Bold.otf')  format('opentype'),
-	     url('../webfonts/ProximaNova-Bold.woff') format('woff'), url('../webfonts/ProximaNova-Bold.ttf')  format('truetype'), url('../webfonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
-  font-weight: 700;
-  font-style: normal;
+	font-family: 'ProximaNova';
+	src: url('../webfonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),  url('../webfonts/ProximaNova-Bold.otf')  format('opentype'),
+		url('../webfonts/ProximaNova-Bold.woff') format('woff'), url('../webfonts/ProximaNova-Bold.ttf')  format('truetype'), url('../webfonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
 }
 
 
 /* ==========================================================
-   _container _body
-   ========================================================== */
+_container _body
+========================================================== */
 
 body,html{
-    font: 16px ProximaNova,Helvetica, Helvetica Neue, Arial;
-    cursor: default;
+	font: 16px ProximaNova,Helvetica, Helvetica Neue, Arial;
+	cursor: default;
 	font-weight: 400;
 	color: #001729;
 	overflow-x: hidden;
 }
 .container{
-    max-width: 1110px;
+	max-width: 1110px;
 	width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
 }
 section{
 	background-repeat: no-repeat;
@@ -167,8 +166,8 @@ section{
 }
 
 /* ==========================================================
-   _variables
-   ========================================================== */
+_variables
+========================================================== */
 
 $t: .55s;
 $b: #001729;
@@ -235,8 +234,8 @@ $o: #ff9c00;
 }
 
 /* ==========================================================
-   _global
-   ========================================================== */
+_global
+========================================================== */
 
 .h1{
 	@include h1;
@@ -460,6 +459,7 @@ hr{
 	}
 	a:not(.btn){
 		@include a;
+		font-size: inherit;
 	}
 	>a{
 		display: block;
@@ -550,8 +550,8 @@ hr{
 
 
 /* ==========================================================
-   _header _footer
-   ========================================================== */
+_header _footer
+========================================================== */
 
 .header{
 	position: relative;
@@ -692,6 +692,9 @@ hr{
 			}
 		}
 		nav{
+			display: flex;
+			flex-shrink: 0;
+			margin-left: auto;
 			a{
 				padding-right: 5px;
 				padding-bottom: 1px;
@@ -765,10 +768,13 @@ hr{
 		background-color: #fff;
 		padding: 5px 0;
 		visibility: hidden;
+		opacity: 0;
 		pointer-events: none;
+		transition: 0.5s all;
 		&._active{
 			visibility: visible;
 			pointer-events: all;
+			opacity: 1;
 			.header__menu_row{
 				opacity: 1;
 			}
@@ -964,13 +970,18 @@ hr{
 		}
 		&_link{
 			color: $b;
-			&:first-of-type{
+			&:not(:last-of-type){
 				margin-right: 70px;
 			}
 		}
 		svg{
 			margin-right: 12px;
 			margin-top: -4px;
+			max-height: 18px;
+			max-width: 18px;
+			path{
+				fill: rgb(227, 203, 178);
+			}
 		}
 		&_phone{
 			margin-left: auto;
@@ -1044,6 +1055,8 @@ hr{
 				content: '';
 				position: absolute;
 				width: 100%;
+				left: 0;
+				top: 0;
 				z-index: -1;
 				height: 100%;
 				background-color: rgba($b,.15);
@@ -1061,6 +1074,11 @@ hr{
 						background-color: rgba($b,.15);
 					}
 				}
+				.progress{
+					width: 100%;
+					opacity: 1;
+					transition: 4s width linear;
+				}
 			}
 			h3{
 				color: #ffffff;
@@ -1075,8 +1093,14 @@ hr{
 				position: relative;
 				z-index: 2;
 			}
-			progress[value]{
-				width: 100%;
+			.progress{
+				opacity: 0;
+				width: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 3px;
+				background-color: $o;
 			}
 		}
 	}
@@ -1198,6 +1222,7 @@ hr{
 	}
 	&__item{
 		margin-left: 30px;
+		width: 100%;
 		max-width: 241.2px;
 		margin-bottom: 30px;
 		display: flex;
@@ -1210,9 +1235,6 @@ hr{
 				}
 				&_img{
 					background-color: $o;
-					&:hover{
-						background-color: $b;
-					}
 				}
 			}
 		}
@@ -1449,10 +1471,9 @@ hr{
 }
 
 
-
 /* ==========================================================
-   _inner
-   ========================================================== */
+_inner
+========================================================== */
 
 .s_head{
 	background-color: $p;
@@ -1468,11 +1489,14 @@ hr{
 		a,span{
 			font-size: 16px;
 			color: $b;
+		}
+		>span{
 			margin-left: 5px;
 		}
 		a{
 			border-bottom: 1px solid #fff;
 			margin-right: 5px;
+			margin-left: 5px;
 			&:first-of-type{
 				margin-left: 0;
 			}
@@ -1547,6 +1571,13 @@ hr{
 			@extend ._flex_sb_fs;
 			i{
 				min-width: 33px;
+				svg{
+					max-width: 18px;
+					max-height: 18px;
+					path{
+						fill: $o;
+					}
+				}
 			}
 			>div{
 				flex-grow: 2;
@@ -1676,22 +1707,26 @@ hr{
 		@extend ._flex_fs_s;
 		width: calc(50% - 15px);
 		margin-bottom: 30px;
+		position: relative;
+		overflow: hidden;
+		background-color: #000;
+		color: #fff;
+
 		&:hover{
-			border-color: $o;
 			.s_blog__item_img{
-				&:before{
-					opacity: 0.6;
-				}
+				opacity: .15;
+				transform: scale(1.02);
 			}
 		}
 		&_img{
-			max-width: 50px;
-			min-width: 50px;
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
-			margin: -1px;
-			position: relative;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transition: 0.2s all;
+			opacity: .25;
 			&:before{
 				content: '';
 				position: absolute;
@@ -1705,6 +1740,11 @@ hr{
 		}
 		&_txt{
 			padding: 30px;
+			position: relative;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
 		}
 		h2{
 			@include h1(1.25em);
@@ -1717,6 +1757,8 @@ hr{
 			font-size: 1em;
 			color: $b;
 			padding: 16px 60px;
+			color: #fff;
+			margin-top: auto;
 			display: inline-block;
 			border: 2px solid  $o;
 			text-transform: uppercase;
@@ -1774,6 +1816,7 @@ hr{
 	}
 	&__right{
 		padding-top: 70px;
+		flex-grow: 2;
 		padding-bottom: 65px;
 		h1{
 			font-size: 27px;
@@ -1841,8 +1884,8 @@ hr{
 }
 
 /* ==========================================================
-   _placeholder
-   ========================================================== */
+_placeholder
+========================================================== */
 body,html{
 	$placeholder: '.input';
 	$placeholder2: '.textarea';
@@ -1889,15 +1932,15 @@ body,html{
 }
 
 .overlay{
-    bottom: 0;
-    cursor: default;
-    left: 0;
-    opacity: 0.7;
-    position: fixed;
-    right: 0;
-    top: 0;
-    visibility: hidden;
-    z-index: 77777;
+	bottom: 0;
+	cursor: default;
+	left: 0;
+	opacity: 0.7;
+	position: fixed;
+	right: 0;
+	top: 0;
+	visibility: hidden;
+	z-index: 77777;
 	opacity: 0;
 	transition: $t*1.5;
 	pointer-events:none;
@@ -1912,12 +1955,12 @@ body,html{
 	visibility: hidden;
 	pointer-events:none;
 	z-index: 99999;
-    left: 50%;
-    -webkit-font-smoothing: antialiased;
-    top: 0;
-    background-color: #ffffff;
-    padding: 55px 45px 45px;
-    width: 100%;
+	left: 50%;
+	-webkit-font-smoothing: antialiased;
+	top: 0;
+	background-color: #ffffff;
+	padding: 55px 45px 45px;
+	width: 100%;
 	max-width: 860px;
 	margin-top: 13vh;
 	margin-left: -430px;
@@ -1925,20 +1968,20 @@ body,html{
 		opacity: 0;
 		transition: $t*1.7;
 	}
-    .close_pop{
-        font-size: 50px;
-        color: $bdr;
-        line-height: .7;
+	.close_pop{
+		font-size: 50px;
+		color: $bdr;
+		line-height: .7;
 		text-align: center;
-        cursor: pointer;
-        font-weight: 100;
+		cursor: pointer;
+		font-weight: 100;
 		font-family: fix;
 		margin-top: -3px;
 		border: 1px solid #fff;
 		&:hover{
 			color: red;
 		}
-    }
+	}
 	.h1,.h2{
 		@extend ._flex_sb_c;
 	}
@@ -2006,22 +2049,22 @@ body,html{
 	}
 }
 .visible{
-    opacity: 1 !important;
-    visibility: visible !important;
+	opacity: 1 !important;
+	visibility: visible !important;
 	pointer-events: all;
 }
 
 .NFI-wrapper{
-    display:flex !important;
-    overflow: visible !important;
-    margin-left:1px;
+	display:flex !important;
+	overflow: visible !important;
+	margin-left:1px;
 	position: relative;
 	margin-bottom: 30px;
-    .NFI-filename{
-        border: none;
-        font-size: 0.75em;
+	.NFI-filename{
+		border: none;
+		font-size: 0.75em;
 		text-transform: uppercase;
-        margin-left: 15px;
+		margin-left: 15px;
 		font-weight: 400;
 		color: #000;
 		padding-left: 29px !important;
@@ -2037,7 +2080,7 @@ body,html{
 		&._active{
 			visibility: visible;
 		}
-    }
+	}
 	&_label{
 		font-size: 0.75em;
 		text-transform: uppercase;
@@ -2098,8 +2141,8 @@ body,html{
 	}
 }
 .NFI-button {
-    background-color: transparent;
-    margin-top: 0;
+	background-color: transparent;
+	margin-top: 0;
 	position: relative;
 	z-index: 5;
 	flex-grow: 2;
@@ -2108,7 +2151,7 @@ body,html{
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
-    transition: background $t;
+	transition: background $t;
 	height: 50px;
 	&:before{
 		content: '';
@@ -2169,8 +2212,8 @@ body,html{
 }
 
 /* ==========================================================
-   _responsive
-   ========================================================== */
+_responsive
+========================================================== */
 
 @media only screen and (min-width: 1125px) {
 	.header__bot{
@@ -3114,23 +3157,23 @@ body,html{
 }
 
 /* ==========================================================
-   _flex
-   ========================================================== */
+_flex
+========================================================== */
 
 ._flex_sb_fs{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 ._flex_sb_fe{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 ._flex_sb_c{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 ._flex_sb_s{
 	display: flex;
@@ -3138,34 +3181,34 @@ body,html{
 	align-items: stretch;
 }
 ._flex_sa_fs{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
 }
 ._flex_sa_fe{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
 }
 ._flex_sa_c{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 ._flex_c_fs{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 ._flex_c_fe{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 ._flex_c_c{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 ._flex_fs_c{
 	display: flex;
@@ -3210,13 +3253,13 @@ body,html{
 
 ::-webkit-scrollbar
 {
-  width: 15px;  /* for vertical scrollbars */
-  height: 15px; /* for horizontal scrollbars */
+	width: 15px;  /* for vertical scrollbars */
+	height: 15px; /* for horizontal scrollbars */
 }
 
 ::-webkit-scrollbar-track
 {
-  background-color: #fff;
+	background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb
@@ -3230,65 +3273,65 @@ body,html{
 
 
 /* ==========================================================
-   _print
-   ========================================================== */
+_print
+========================================================== */
 
 @media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+	*,
+	*:before,
+	*:after {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+	a[href^="#"]:after,
+	a[href^="javascript:"]:after {
+		content: "";
+	}
 
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
 
-    thead {
-        display: table-header-group;
-    }
+	thead {
+		display: table-header-group;
+	}
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
 
-    img {
-        max-width: 100% !important;
-    }
+	img {
+		max-width: 100% !important;
+	}
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
 
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
 }
